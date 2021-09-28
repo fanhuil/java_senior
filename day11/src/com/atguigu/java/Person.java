@@ -9,7 +9,7 @@ public class Person {
     public int age;
 
     public Person() {
-
+        System.out.println("我被调用了");
     }
 
     public Person(String name, int age) {
