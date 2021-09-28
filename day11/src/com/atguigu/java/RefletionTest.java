@@ -8,8 +8,8 @@ public class RefletionTest {
     public static void main(String[] args) {
         // 反射之前，对于Person的操作
         @Test
-        public void test1 () {
-
+                public void test1(){
+            
         }
     }
 }
