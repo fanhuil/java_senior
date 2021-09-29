@@ -14,6 +14,12 @@ public class NewInstanceTest {
     @Test
     public void test1() throws Exception {
         Class clazz = Person.class;
+        ClassLoader classLoaderclazz = clazz.getClassLoader();
+        System.out.println(classLoaderclazz);
+
+        Class c = Class.class;
+        Class getClazz = c.getClass();
+        System.out.println(getClazz);
         /*
          * newInstance():调用此方法，创建对应是运行时类的对象。内部调用了运行时类的空参的构造器、
          * 要想此方法正常的创建运行时类的对象，要求：
@@ -24,8 +30,8 @@ public class NewInstanceTest {
          * 1、便于通过反射，创建运行时类的对象
          * 2、便于子类继承此运行时类时，默认调用super()时，保证父类有此构造器
          * */
-        Person obj = (Person) clazz.newInstance();
-        System.out.println(obj);
+//        Person obj = (Person) clazz.newInstance();
+//        System.out.println(obj);
     }
 
     @Test
