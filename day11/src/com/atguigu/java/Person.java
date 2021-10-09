@@ -1,24 +1,20 @@
 package com.atguigu.java;
 
 /**
- * @auchor fanhuilin
- * @create 2021 上午 10:38
+ * @author shkstart
+ * @create 2019 上午 10:38
  */
 public class Person {
+
     private String name;
     public int age;
 
-    public Person() {
-        System.out.println("我被调用了");
-    }
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    private Person(String name) {
-        this.name = name;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 
     public String getName() {
@@ -37,19 +33,25 @@ public class Person {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public Person(String name, int age) {
+
+        this.name = name;
+        this.age = age;
     }
 
-    public void show() {
-        System.out.println("您好，我是一个人");
+    private Person(String name) {
+        this.name = name;
     }
 
-    private String showNation(String nation) {
+    public Person() {
+        System.out.println("Person()");
+    }
+
+    public void show(){
+        System.out.println("你好，我是一个人");
+    }
+
+    private String showNation(String nation){
         System.out.println("我的国籍是：" + nation);
         return nation;
     }

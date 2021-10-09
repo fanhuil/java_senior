@@ -1,9 +1,10 @@
 package com.atguigu.java1;
 
 /**
- * @author fanhuilin
- * @date 2021-09-28 14:37
+ * @author shkstart
+ * @create 2019 下午 3:15
  */
+
 public interface MyInterface {
     void info();
 }

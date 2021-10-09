@@ -3,8 +3,8 @@ package com.atguigu.java1;
 import java.io.Serializable;
 
 /**
- * @author fanhuilin
- * @date 2021-09-28 14:35
+ * @author shkstart
+ * @create 2019 下午 3:12
  */
 public class Creature<T> implements Serializable {
     private char gender;
@@ -15,6 +15,7 @@ public class Creature<T> implements Serializable {
     }
 
     public void eat(){
-        System.out.println("生物进食");
+        System.out.println("生物吃东西");
     }
+
 }
